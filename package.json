@@ -32,6 +32,9 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^1.19.2",
+    "@graphql-codegen/typescript": "^1.17.11",
+    "@graphql-codegen/typescript-operations": "^1.17.10",
     "prettier": "2.1.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -51,6 +54,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "codegen": "graphql-codegen --config codegen.yml",
+    "postcodegen": "prettier --write ./src/graphqlTypes.ts"
   }
 }
