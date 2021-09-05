@@ -9,3 +9,6 @@ generates:
     config:
       namingConvention:
         enumValues: "keep"
+hooks:
+  afterAllFileWrite:
+    - prettier --write

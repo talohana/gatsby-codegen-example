@@ -55,7 +55,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "codegen": "graphql-codegen --config codegen.yml",
-    "postcodegen": "prettier --write ./src/graphqlTypes.ts"
+    "codegen": "graphql-codegen",
+    "codegen:watch": "graphql-codegen --watch"
   }
 }
